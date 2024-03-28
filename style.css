@@ -1,0 +1,43 @@
+@font-face {
+    font-family: bubbles;
+    src: url(NeueMachina-Regular.otf);
+}
+body{
+    transition: background-color ease-out .5s;
+}
+.video-div{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+*::selection{
+    background-color:salmon;
+    color:black;
+}
+body[theme="black"]{
+    background-color: black;
+    color:white;
+    font-family: bubbles;
+}
+body[theme="black"] .section{
+    color:white;
+}
+body[theme="cyan"]{
+    background-color: rgb(131, 199, 188);
+    font-family: bubbles;
+}
+body[theme="cyan"] .section{
+    color:rgb(25, 25, 78);
+}
+body[theme="salmon"]{
+    background-color: salmon;
+    font-family: bubbles;
+}
+body[theme="salmon"] .section{
+    color:rgb(131, 26, 26);
+}
+body[theme="white"]{
+    font-family: bubbles;
+    background-color:white;
+}
+body[theme="white"] .section{
+    color:black;
+}
